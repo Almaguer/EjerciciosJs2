@@ -73,7 +73,7 @@ function esBisiesto(anio){
 
 alert(esBisiesto(anioUsuario));
 
-*/
+*
 
 function tablas(){
 	var renglon = 1;
@@ -94,3 +94,62 @@ function tablas(){
 }
 
 tablas();
+
+
+function cuadrado(){
+	var num= Number(prompt("Dame hasta que numero quieres saber los cuadrados"));
+	var i=1;
+	while(i<=num){
+		
+		document.write(i*i + "<br>");
+		i++
+		
+	}
+}
+
+cuadrado();
+
+*/
+
+function head(arr){
+	var cero= arr[0];
+
+	return cero;
+}
+
+
+function tail(arr){
+	var aux = [arr.length-1]
+	for (var i = 1; i <arr.length ; i++) {
+		aux[i-1]= arr[i];
+	}
+	return aux;
+}
+
+var arr1= [1,2,3,4,5,4,3,2,1];
+var arreglo= tail(arr1);
+document.write(arreglo);
+
+alert(head(arr1));
+
+function last(arr){
+	var ultimo= arr[arr.length-1];
+
+	return ultimo;
+}
+var res= last(arr1);
+alert(res);
+
+
+function init(arr){
+	var aux = [arr.length-1];
+	for (var i = 0; i <arr.length-1 ; i++) {
+		aux[i]= arr[i];
+	}
+	return aux;
+}
+
+arr2= [1,2,3,4,5,6,7,8,9,10];
+var arreglo2= init(arr2);
+"\n";
+document.write(arreglo2);
